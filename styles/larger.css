@@ -1,0 +1,53 @@
+/* The larger css file must contain a media query */
+
+@media only screen and (min-width:600px) {
+    
+    
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 24px auto;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #ccc;
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation a {
+        border: none;
+    }
+
+    /* Main */
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* Create a 2-column layout of equal width */
+        gap: 20px;
+    }
+    .certificates {
+        grid-column: 1 / -1; /* Tells it to stretch from the first column line to the last */
+    }
+
+    /* Filter buttons container */
+    .certificate-filters {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    /* Certificate Grid Layout */
+    .certificate-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+}

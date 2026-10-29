@@ -1,0 +1,142 @@
+/* create a responsive layout for all screen widths from (320px) and up */
+
+/* Root variables */
+/* :root {
+  --header-color: #333;
+  --background-color: #f7f7f7;
+  --text-color:#000;
+  --active-color:#555;
+  --border-color: #ccc;
+  --font-family: "Roboto", sans-serif;
+} */
+
+/* Reset */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: end;
+  border-bottom: 1px solid #ccc;
+  column-gap: 8px;
+}
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2px;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+/* Harmbuger */
+.hamburger {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* 99.9% of computers use this font */
+  font-size: 2rem;
+}
+.hamburger::before {
+  content: "\2630"; /* Hamburger icon */
+}
+
+.hamburger.show::before {
+  content: "\00D7"; /* X icon */
+}
+
+/* Navigation */
+.navigation {
+  display: none;
+}
+.navigation.show {
+  display: block;
+}
+ .navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+.navigation a {
+  display: block;
+  padding: .82rem 10px;  /* For consistency, use same px with header padding */
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+.navigation li.current a {
+  background-color: #555;
+}
+.navigation a:hover {
+  background-color: #ccc;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+/* Main Section */
+main {
+  margin: 10px;
+}
+
+main section h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+section.card {
+  background-color: #ccc;
+}
+main section img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.certificates {
+  background-color: #fff;
+}
+
+button.filter-btn {
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+div.cert-item {
+  border-radius: 5px;
+  padding: 5px;
+}
+/* Active or hovered filter button state */
+.filter-btn:hover, 
+.filter-btn.active {
+    background-color: #555;
+    color: #fff;
+}
+
+  /* Certificate Grid Layout */
+    .certificate-grid {
+      background-color: #fff;
+      gap: 10px;
+      border-radius: 5px;
+    }
+
+  /* Individual Certificate Cards */
+.cert-item {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    padding: 5px;
+}

@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is The Course Home Page, Its aimed at demonstrates my prerequisite knowledge by applying HTML, CSS, and JavaScript to the design and development of my course home page.">
+    <meta name="author" content="Iyonawan Blessing Agharese">
     <title>WDD231</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- JS -->
+     <script src="scripts/course.js" defer></script>
+     <script src="scripts/date.js" defer></script>
+     <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to WDD231</h1>
+    <header>
+        <img src="images/home.svg" alt="site logo" height="512" width="512" >
+        <span id="course-title">WDD 231 – Web Frontend Development I</span>
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="grid-container">
+
+            <!-- About Me Section -->
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <p>My name is Blessing. I was born and brought up in Nigeria. I am a Software Engineering student. I share practical
+                tutorials on YouTube, breaking down AI tools to help others work smarter. At the heart of everything I create is a drive
+                to keep learning, help others grow, and build a great future for my daughter.</p>
+            </section>
+
+            <!-- Student Photo Section -->
+            <section class="card profile-photo">
+                <h2>Student Photo</h2>
+                <div><img class="profile-img" src="images/blessinga.png" alt="Agharese Blessing Iyonawan "></div>
+            </section>
+
+            <!-- Certificate Section  -->
+            <section class="card certificates">
+                <h2>Web Certificate Courses</h2>
+
+                <!-- Filter Buttons: All, CSE, WDD -->
+                    <div class="certificate-filters">
+                        <button class="filter-btn active" data-filter="all">ALL</button>
+                        <button class="filter-btn" data-filter="cse">CSE</button>
+                        <button class="filter-btn"data-filter="wdd">WDD</button>
+                    </div>
+
+                    <!-- Nested container for certificate cards. I will change this in js later -->
+                <div class="certificate-grid">
+                    <div class="cert-item" data-category="wdd"> WDD130</div>
+                    <div class="cert-item" >CSE110</div>
+                    <div class="cert-item" data-category="cse">CSE111</div>
+                </div>
+            </section>
+            <p>The total credits for course listed above is 6</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>❤️Agharese Iyonawan Blessing.❤️ Nigeria.</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
 </body>
 </html>
