@@ -52,24 +52,29 @@
                 <h2>Web Certificate Courses</h2>
 
                 <!-- Filter Buttons: All, CSE, WDD -->
-                    <div class="certificate-filters">
+                    <div id="display-certificate" class="certificate-filters">
                         <button class="filter-btn active" data-filter="all">ALL</button>
                         <button class="filter-btn" data-filter="cse">CSE</button>
                         <button class="filter-btn"data-filter="wdd">WDD</button>
                     </div>
 
                     <!-- Nested container for certificate cards. I will change this in js later -->
-                <div class="certificate-grid">
-                    <div class="cert-item" data-category="wdd"> WDD130</div>
+                <div id="course-container" class="certificate-grid">
+                    <!-- <div class="cert-item" data-category="wdd"> WDD130</div>
                     <div class="cert-item" >CSE110</div>
-                    <div class="cert-item" data-category="cse">CSE111</div>
+                    <div class="cert-item" data-category="cse">CSE111</div> -->
                 </div>
             </section>
-            <p>The total credits for course listed above is 6</p>
+            <p id="total-credits" class="credit-p">The total credits for course listed above is 6</p>
         </div>
 
     </main>
     <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/blessing-agharese"><img src="images/linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/blesyn101/"><img src="images/github.svg" alt="github"></a>
+            <a href=""><img src="images/x-twitter.svg" alt="x"></a>
+        </div>
         <p>&copy; <span id="currentyear"></span>❤️Agharese Iyonawan Blessing.❤️ Nigeria.</p>
         <p id="lastModified">Last Modification: </p>
     </footer>

@@ -104,6 +104,10 @@ main section img {
   border-radius: 4px;
 }
 
+.about-me p {
+  padding: 0 10px 20px;
+}
+
 .certificates {
   background-color: #fff;
 }
@@ -111,7 +115,8 @@ main section img {
 button.filter-btn {
   font-weight: bold;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px 30px;
+  width: 100%;
   cursor: pointer;
 }
 div.cert-item {
@@ -130,6 +135,7 @@ div.cert-item {
       background-color: #fff;
       gap: 10px;
       border-radius: 5px;
+      margin-top: 20px;
     }
 
   /* Individual Certificate Cards */
@@ -139,4 +145,30 @@ div.cert-item {
     padding: 15px;
     border-radius: 5px;
     padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.credit-p{
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #ccc; 
+    display: grid;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.socials img {
+  height: 60px;
+  width: 60px;
+}
+
+footer p {
+  margin: 5px;
 }
