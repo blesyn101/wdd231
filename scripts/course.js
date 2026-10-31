@@ -83,9 +83,7 @@ function displayCourses(courseList) {
             courseCard.classList.add("cert-item");
 
             courseCard.innerHTML = `
-                <h3> ${ course.subject } ${ course.number } </h3 >
-                <p>${course.title}</p>
-                <p>${course.credits}</p>
+                <div> ${ course.subject } ${ course.number } </div >
             `;
 
             courseContainer.appendChild(courseCard);
@@ -97,7 +95,24 @@ function displayCourses(courseList) {
 displayCourses(courses);
     
 
-// filter course
+// filtering function
+function filterCourses(category) {
+
+    let filteredCourses;
+
+    if (category === "all") {
+        filteredCourses = courses;
+        
+    } else {
+        filteredCourses = courses.filter(function (course) {
+            return course.subject.toLowerCase() === category;
+        });
+    }
+
+    displayCourses(filteredCourses);
+}
+
+// filter to check course category
 
 const filterButtons = document.querySelectorAll(".filter-btn");
 
@@ -106,7 +121,7 @@ filterButtons.forEach(function (button) {
       const category = button.dataset.filter;
 
       // Call the filtering function
-      filteredCourses(category);
+      filterCourses(category);
 
       // Remove active class from all buttons
       filterButtons.forEach(function (btn) {
