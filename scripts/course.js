@@ -73,30 +73,33 @@ const courseContainer = document.getElementById("course-container");
 
 
 function displayCourses(courseList) {
-        courseContainer.innerHTML = "";
+  courseContainer.innerHTML = "";
 
-        courseList.forEach(function (course) {
+  courseList.forEach(function (course) {
+    const courseCard = document.createElement("div");
 
-            const courseCard = document.createElement("div");
+    // add the class so it can get the style
+    courseCard.classList.add("cert-item");
 
-            // add the class so it can get the style
-            courseCard.classList.add("cert-item");
+    // Adds the class completed to my completed course and this serves as indicator i worked on in css
+    if (course.completed === true) {
+      courseCard.classList.add("completed");
+    }
 
-            // Adds the class completed to my completed course and this serves as indicator i worked on in css
-            if (course.completed === true) {
-                courseCard.classList.add("completed");
-            }
-
-            courseCard.innerHTML = `
-                <div> ${ course.subject} ${course.number } </div >
+    courseCard.innerHTML = `
+                <div> ${course.subject} ${course.number} </div >
             
             `;
 
-            courseContainer.appendChild(courseCard);
-        });
-    
-    
+    courseContainer.appendChild(courseCard);
+  });
 
+  const total = courseList.reduce(function (sum, course) {
+    return sum + course.credits;
+  }, 0); // 0 is the initialValue
+    
+    document.getElementById("total-credits").textContent =
+      `The total credits for course listed above is ${total}`;
 }
     
     // CALL THE FUNCTION
