@@ -94,6 +94,8 @@ function displayCourses(courseList) {
 
             courseContainer.appendChild(courseCard);
         });
+    
+    
 
 }
     
