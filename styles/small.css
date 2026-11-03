@@ -143,6 +143,12 @@ div.cert-item {
   text-align: center;
 }
 
+/* completed course indicator */
+.cert-item.completed  {
+  background-color: #555;
+  color: #fff;
+}
+
 /* Footer */
 footer {
     background-color: #ccc; 
