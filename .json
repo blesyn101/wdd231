@@ -1,0 +1,43 @@
+{
+    "familyName": "Agharese",
+    "moveInDate": "2026-11-05",
+    "numberOfPeople" :7,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "Augustine",
+            "gender": "male",
+            "birthdate": 1963
+        },
+        {
+            "name": "Ehigie",
+            "gender": "male",
+            "birthdate": 1991
+        },
+        {
+            "name": "Esther",
+            "gender": "male",
+            "birthdate": 1963
+        },
+        {
+            "name": "Iyonawan",
+            "gender": "male",
+            "birthdate": 1963
+        },
+        {
+            "name": "Titi",
+            "gender": "male",
+            "birthdate": 1963
+        },
+        {
+            "name": "Nosa",
+            "gender": "male",
+            "birthdate": 1963
+        },
+        {
+            "name": "Osagie",
+            "gender": "male",
+            "birthdate": 1963
+        }
+    ]
+}
