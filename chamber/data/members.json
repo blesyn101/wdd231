@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Nosa Craft & Leathers",
+        "address": "Medical Road, Benin City, Edo State",
+        "phone": "+234 901 240 5843",
+        "email": "agharesenosa002@gmail.com",
+        "website": "https://nosacraft.com",
+        "image": "nosa.webp",
+        "membership": 3
+    },
+    {
+        "name": "Enot Style",
+        "address": "Medical Road, Benin City, Edo State",
+        "phone": "+234 812 560 4457",
+        "email": "enotstyle@gmail.com",
+        "website": "https://citystyle.com",
+        "image": "citystyle.webp",
+        "membership": 2
+    },
+    {
+        "name": "Royal Taste Restaurant",
+        "address": "Sapele Road, Benin City, Edo State",
+        "phone": "+234 800 000 0002",
+        "email": "info@royaltaste.com",
+        "website": "https://royaltaste.com",
+        "image": "royaltaste.webp",
+        "membership": 2
+    },
+    {
+        "name": "Benin Heritage Crafts",
+        "address": "Ring Road, Benin City, Edo State",
+        "phone": "+234 800 000 0003",
+        "email": "info@heritagecrafts.com",
+        "website": "https://heritagecrafts.com",
+        "image": "heritage.webp",
+        "membership": 1
+    },
+    {
+        "name": "GreenFields Agro Ventures",
+        "address": "Ugbowo, Benin City, Edo State",
+        "phone": "+234 800 000 0004",
+        "email": "info@greenfields.co",
+        "website": "https://greenfields.oc",
+        "image": "greenfields.webp",
+        "membership": 3
+    },
+    {
+        "name": "Summit Properties",
+        "address": "New Benin, Benin City, Edo State",
+        "phone": "+234 800 000 0006",
+        "email": "info@summitproperties.cpm",
+        "website": "https://summitproperties.com",
+        "image": "summit.webp",
+        "membership": 1
+    },
+    {
+        "name": "HealthFirst Medical Centre",
+        "address": "Etete, Benin City, Edo State",
+        "phone": "+234 800 000 0007",
+        "email": "info@healthfirst.com",
+        "website": "https://healthfirst.com",
+        "image": "healthfirst.webp",
+        "membership": 3
+    }
+]

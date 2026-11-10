@@ -1,0 +1,48 @@
+@media (min-width:640px) {
+/* Header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 5%;
+    }
+
+   #menu {
+    display: none; /* hide hamburger button on large screen */
+  }
+
+  .navigation {
+    display: flex;    
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 0.75rem;
+}
+
+/* Grid view: multiple cards per row */
+
+.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* List view: business details in columns */
+.list-view .card-content {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+  }
+
+}

@@ -1,0 +1,247 @@
+/* Root Variables */
+:root {
+    --primary-color: #174a3a;
+    --secondary-color: #C99A43;
+    --hover: #dbd5ca;
+    --Background-color: #F7F5EF;
+    --text-color: #252A27;
+    --heading-color: #f7f7f7;
+
+    --font-family: "Roboto", sans-serif;
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    color: var(--text-color);
+}
+h2 {
+    font-size: 2rem;
+}
+
+header, footer {
+    color: var(--heading-color);
+    background-color: var(--primary-color);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--Background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    position: relative;
+
+}
+
+#menu {
+  font-size: 2rem;
+  border: 0;
+  font-weight: 700;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✕";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: left;
+  text-decoration: none;
+  color: var(--Background-color);
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  background-color: var(--hover);
+}
+
+/* When the button is clicked- the open class is toggled (added/removed) */
+.open a {
+  display: block;
+}
+
+/* nav a:hover {
+    color: var(--secondary-color);
+} */
+
+/* A wayfinding symbol for the user */
+.active::after {
+  color: var(--secondary-color);
+  content: " •";
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h3, main > p {
+    margin-bottom: 1rem;
+}
+
+/* Grid and List button */
+.view {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.view button {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.view button:hover,
+.view button[aria-pressed="true"] { 
+    background: var(--Background-color);
+    color: var(--primary-color);
+}
+
+/* Grid view */
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #d5d1c8;
+    border-radius: 6px;
+    padding: 1rem;
+    background: #fff;
+}
+.card-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.card-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-body img {
+    width: 35%;
+    max-width: 130px;
+    height: 110px;
+    object-fit: contain;
+}
+.card-content {
+    flex: 1;
+    overflow-wrap: anywhere;  /* Specifies whether the UA may break within a word to prevent overflow when an otherwise-unbreakable string is too long to fit within the line box. */
+}
+
+.card-content p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.card-content span {
+    font-weight: 700;
+}
+
+/* List View */
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.list-view .card {
+    border-radius: 0;
+    padding: 0.75rem;
+}
+
+.list-view .card-title {
+    display: block;
+    text-align: left;
+    border-bottom: none;
+    margin-bottom: 0.25rem;
+}
+
+.list-view .card-body {
+    display: block;
+}
+
+.list-view .card-body img {
+    display: none;
+}
+
+.list-view .card-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+}
+
+.list-view .card-content p {
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list-view .card:nth-child(even) {
+    background-color: #e8e5dd;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+footer h3 {
+    color: var(--heading-color);
+}
+
+footer img {
+    height: 40px;
+    width: 40px;
+}
