@@ -56,6 +56,12 @@ header {
     gap: 10px;
 }
 
+.site-branding p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
 #menu {
   font-size: 2rem;
   border: 0;
@@ -120,6 +126,12 @@ main {
 
 main h3, main > p {
     margin-bottom: 1rem;
+}
+
+.loading-message {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 2rem;
 }
 
 /* Grid and List button */
@@ -243,7 +255,6 @@ main h3, main > p {
 /* Footer */
 
 footer {
-    background-color: var(--primary-color);
     display: grid;
     gap: 1rem;
     padding: 1.5rem;

@@ -60,7 +60,7 @@ function displayMembers(members) {
             <h3 class="card-title">${member.name}</h3>
 
             <div class="card-body">
-                <img src="images/${member.image}" alt="${member.name}" loading="lazy">
+                <img src="images/${member.image}" alt="${member.name}" width="130" height="110" loading="lazy">
 
                 <div class="card-content">
                     <p><span>EMAIL:</span> <a href="mailto:${member.email}">${member.email}</a></p>
