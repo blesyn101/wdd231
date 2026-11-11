@@ -43,6 +43,19 @@ header {
 
 }
 
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #menu {
   font-size: 2rem;
   border: 0;
