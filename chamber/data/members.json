@@ -4,8 +4,8 @@
         "address": "Medical Road, Benin City, Edo State",
         "phone": "+234 901 240 5843",
         "email": "agharesenosa002@gmail.com",
-        "website": "https://nosacraft.com",
-        "image": "nosa.webp",
+        "website": "https://blesyn101.github.io/wdd231/images/blessinga.jpg",
+        "image": "nosa.jpg",
         "membership": 3
     },
     {
@@ -14,16 +14,16 @@
         "phone": "+234 812 560 4457",
         "email": "enotstyle@gmail.com",
         "website": "https://citystyle.com",
-        "image": "citystyle.webp",
+        "image": "enotstylef.jpg",
         "membership": 2
     },
     {
         "name": "Royal Taste Restaurant",
         "address": "Sapele Road, Benin City, Edo State",
-        "phone": "+234 800 000 0002",
+        "phone": "+234 800 000 1202",
         "email": "info@royaltaste.com",
         "website": "https://royaltaste.com",
-        "image": "royaltaste.webp",
+        "image": "restaurant.jpg",
         "membership": 2
     },
     {
@@ -32,16 +32,16 @@
         "phone": "+234 800 000 0003",
         "email": "info@heritagecrafts.com",
         "website": "https://heritagecrafts.com",
-        "image": "heritage.webp",
+        "image": "beninheritage.jpg.",
         "membership": 1
     },
     {
         "name": "GreenFields Agro Ventures",
         "address": "Ugbowo, Benin City, Edo State",
-        "phone": "+234 800 000 0004",
+        "phone": "+234 901 000 0004",
         "email": "info@greenfields.co",
         "website": "https://greenfields.oc",
-        "image": "greenfields.webp",
+        "image": "agrov.jpg",
         "membership": 3
     },
     {
@@ -50,7 +50,7 @@
         "phone": "+234 800 000 0006",
         "email": "info@summitproperties.cpm",
         "website": "https://summitproperties.com",
-        "image": "summit.webp",
+        "image": "properties.png",
         "membership": 1
     },
     {
@@ -59,7 +59,7 @@
         "phone": "+234 800 000 0007",
         "email": "info@healthfirst.com",
         "website": "https://healthfirst.com",
-        "image": "healthfirst.webp",
+        "image": "medicalc.png",
         "membership": 3
     }
 ]
