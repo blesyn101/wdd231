@@ -54,19 +54,28 @@ function displayMembers(members) {
 
   members.forEach((member) => {
     const card = document.createElement("div");
-    card.classList.add("card");
+      card.classList.add("card");
+      
+      let membershipLevel = "Member";
 
-    card.innerHTML = ` 
-            <h3 class="card-title">${member.name}</h3>
+      if (member.membership === 2) {
+          membershipLevel = "Silver";
+      } else if (member.membership === 3) {
+          membershipLevel = "Gold";
+      }
+      
+        card.innerHTML = ` 
+            <h2 class="card-title">${member.name}</h2>
 
             <div class="card-body">
                 <img src="images/${member.image}" alt="${member.name}" width="130" height="110" loading="lazy">
 
                 <div class="card-content">
+                    <p><span>ADDRESS:</span> ${member.address}</p>
                     <p><span>EMAIL:</span> <a href="mailto:${member.email}">${member.email}</a></p>
                     <p><span>PHONE:</span> ${member.phone}</p>
                     <p><span>WEBSITE:</span> <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a></p>
-                    <p><span>MEMBERSHIP:</span> ${member.membership}</p>
+                    <p><span>MEMBERSHIP:</span> ${membershipLevel}</p>
                 </div>
             </div>    
         `;

@@ -111,8 +111,13 @@ header {
 } */
 
 /* A wayfinding symbol for the user */
+.active {
+    background-color: var(--secondary-color);
+    font-weight: 700;
+}
+
 .active::after {
-  color: var(--secondary-color);
+  color: var(--heading-color);
   content: " •";
 }
 
@@ -127,6 +132,7 @@ main {
 main h3, main > p {
     margin-bottom: 1rem;
 }
+
 
 .loading-message {
     grid-column: 1/-1;
@@ -172,10 +178,10 @@ main h3, main > p {
     background: #fff;
 }
 .card-title {
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 0.5rem;
     border-bottom: 2px solid var(--secondary-color);
 }
 
@@ -198,6 +204,7 @@ main h3, main > p {
 .card-content p {
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
+    overflow-wrap: anywhere;
 }
 
 .card-content span {
@@ -252,8 +259,9 @@ main h3, main > p {
 footer {
     display: grid;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
     margin-top: 2rem;
+    text-align: center;
 }
 footer h3 {
     color: var(--heading-color);
