@@ -203,10 +203,10 @@ main h3, main > p {
 }
 
 .card-body img {
-    width: 100%;
+    width: 35%;
     max-width: 130px;
     height: 110px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .card-content {
     flex: 1;
