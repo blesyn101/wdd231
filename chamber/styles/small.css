@@ -113,7 +113,7 @@ header {
 /* A wayfinding symbol for the user */
 .navigation .active {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     font-weight: 700;
 }
 
