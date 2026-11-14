@@ -117,10 +117,10 @@ header {
     font-weight: 700;
 }
 
-.active::after {
+/* .active::after {
   color: var(--heading-color);
   content: " •";
-}
+} */
 
 /* Main content */
 main {
