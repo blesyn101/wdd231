@@ -84,7 +84,7 @@ function displayMembers(members) {
   });
 }
 
-// getMembers();
+getMembers();
 
 // Display current year
 const currentYear = document.querySelector("#currentyear");
