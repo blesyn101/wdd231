@@ -135,7 +135,7 @@ main h3, main > p {
 }
 
 .visually-hidden {
-    color: black;
+    color: var(--text-color);
     width: 1px;
     height: 1px;
     padding: 0;
@@ -164,7 +164,7 @@ main h3, main > p {
     border: 1px solid var(--primary-color);
     border-radius: 4px;
     background: var(--primary-color);
-    color: #fff;
+    color: var(--heading-color);
     cursor: pointer;
     font-weight: 700;
 }
@@ -323,5 +323,5 @@ footer img {
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--heading-color);
 }
