@@ -109,27 +109,29 @@ async function getSpotlights() {
     const response = await fetch("data/members.json");
     if (response.ok) {
       const data = await response.json();
-      console.log(data); 
-        
-        
-        // Select only Gold and silver members
-        const qualifiedMembers = data.filter((member) =>
-            member.membership === 2 || member.membership === 3);
+      console.log(data);
 
-        // Select Random members
-        const selectedMembers = [];
+      // Select only Gold and silver members
+      const qualifiedMembers = data.filter(
+        (member) => member.membership === 2 || member.membership === 3,
+      );
 
-        while (selectedMembers.length < 3 && qualifiedMembers.length > 0) {
-          const randomIndex = Math.floor(
-              Math.random() * qualifiedMembers.length);
-            
-          // push selected members to display
-            selectedMembers.push(qualifiedMembers[randomIndex]);
-        }
+        // I initialized Random members array
+        // I got help, online. thought it well to reference the site
+      //   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+      // https://www.freecodecamp.org/news/how-to-loop-through-an-array-in-javascript-js-iterate-tutorial/
+      const selectedMembers = [];
 
-        console.log(selectedMembers)
-        displaySpotlights(selectedMembers); 
+      // Select 3 members to display
+      while (selectedMembers.length < 3 && qualifiedMembers.length > 0) {
+        const randomIndex = Math.floor(Math.random() * qualifiedMembers.length);
 
+        // push selected members to display
+        selectedMembers.push(qualifiedMembers[randomIndex]);
+      }
+
+    //   console.log(selectedMembers);
+      displaySpotlights(selectedMembers);
     } else {
       throw new Error(await response.text());
     }
