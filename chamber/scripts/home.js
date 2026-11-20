@@ -117,10 +117,10 @@ async function getSpotlights() {
       );
 
         // I initialized Random members array
-        // I got help, online. thought it well to reference the site
       //   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
       // https://www.freecodecamp.org/news/how-to-loop-through-an-array-in-javascript-js-iterate-tutorial/
-      const selectedMembers = [];
+      
+     const selectedMembers = [];
 
       // Select 3 members to display
       while (selectedMembers.length < 3 && qualifiedMembers.length > 0) {
