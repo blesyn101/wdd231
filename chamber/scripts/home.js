@@ -116,9 +116,18 @@ async function getSpotlights() {
         const qualifiedMembers = data.filter((member) =>
             member.membership === 2 || member.membership === 3);
 
-        // select two or three members to display
-        const selectedMembers = qualifiedMembers.slice(0, 3);
+        // Select Random members
+        const selectedMembers = [];
 
+        while (selectedMembers.length < 3 && qualifiedMembers.length > 0) {
+          const randomIndex = Math.floor(
+              Math.random() * qualifiedMembers.length);
+            
+          // push selected members to display
+            selectedMembers.push(qualifiedMembers[randomIndex]);
+        }
+
+        console.log(selectedMembers)
         displaySpotlights(selectedMembers); 
 
     } else {
