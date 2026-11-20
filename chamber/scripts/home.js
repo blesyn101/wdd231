@@ -1,4 +1,4 @@
-// Home Page: Weather API
+// Weather API
 
 // Benin City COordinators
 const latitude = 6.358600353089199;
@@ -16,6 +16,8 @@ const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitu
 const currentTemp = document.querySelector(".current-temp");
 const weatherDescription = document.querySelector(".weather-description");
 const forecastContainer = document.querySelector("#forecast-container");
+const myTown = document.querySelector(".my-town");
+const weatherIcon = document.querySelector("#weather-icon");
 
 // Get current weather
 async function getWeather() {
@@ -35,17 +37,19 @@ async function getWeather() {
 
 // Display current weather
 function displayWeather(data) {
-  currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
-  const iconsrc = `${weatherURL}/img/wn${data.weather[0].icon}@2x.png`;
+  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   const desc = data.weather[0].description;
-//   weatherIcon.setAttribute("src", iconsrc);
-//   weatherIcon.setAttribute("alt", desc);
-  weatherDescription.textContent = desc;
+  
+    weatherIcon.setAttribute("src", iconsrc);
+    weatherIcon.setAttribute("alt", desc);
+    
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    weatherDescription.textContent = desc;
+    myTown.innerHTML = data.name;
 }
 // call weather function
 getWeather();
 
-//  Three day forecast
 // forecast URL
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
 

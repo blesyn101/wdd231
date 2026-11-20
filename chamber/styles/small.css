@@ -356,6 +356,9 @@ footer img {
     border-radius: 6px;
     margin: 10px 0;
 }
+.current-weather {
+    background-color: var(--secondary-color);
+}
 
 .current-temp {
     font-size: 2rem;
