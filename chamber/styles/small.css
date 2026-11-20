@@ -359,15 +359,24 @@ footer img {
     margin: 2rem 0;
 }
 
-.current-weather, .forecast {
+ .forecast {
     background-color: var(--Background-color);
     padding: 1.5rem;
     border: 1px solid var(--hover);
-    border-radius: 6px;
+    border-radius: 10px;
     margin: 10px 0;
 }
 .current-weather {
     background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid var(--hover);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.weather-description {
+    color: var(--heading-color);
 }
 
 .current-temp {
