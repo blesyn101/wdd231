@@ -97,7 +97,7 @@ function displayForecast(data) {
     })  
   
 }
-
+// call forecast function
 getForecast();
 
 // Business Spotlights
@@ -115,7 +115,6 @@ async function getSpotlights() {
         // Select only Gold and silver members
         const qualifiedMembers = data.filter((member) =>
             member.membership === 2 || member.membership === 3);
-
 
         // select two or three members to display
         const selectedMembers = qualifiedMembers.slice(0, 3);
@@ -154,7 +153,7 @@ function displaySpotlights(members) {
                     <p><span>ADDRESS:</span> ${member.address}</p>
                     <p><span>EMAIL:</span> <a href="mailto:${member.email}">${member.email}</a></p>
                     <p><span>PHONE:</span> ${member.phone}</p>
-                    <p><span>WEBSITE:</span> <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a></p>
+                    <p><span>WEBSITE:</span> <a href="${member.website}" target="_blank">Visit Website</a></p>
                     <p><span>MEMBERSHIP:</span> ${membershipLevel}</p>
         `;
 

@@ -339,7 +339,17 @@ footer img {
     color: var(--heading-color);
 } */
 
-
+/* Events */
+.events {
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    margin: 2rem 0;
+    text-align: center;
+}
+.events h3 {
+    color: var(--heading-color);
+}
 
 /*  Weather Section*/
 #forecast-container {
@@ -414,3 +424,4 @@ footer img {
     background-color: var(--secondary-color);
     color: var(--heading-color);
 }
+
