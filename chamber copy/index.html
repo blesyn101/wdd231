@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover local businesses, services, and business opportunities in Benin City, Edo State, Nigeria.">
+    <meta name="author" content="Iyonawan Blessing Agharese">
+
+    <title>Home Page | Benin City Chamber of Commerce</title>
+
+    <!-- Open graph Meta Tags -->
+    <meta property="og:title" content="Benin City Chamber of Commerce">
+    <meta property="og:description" content="Discover and connect with businesses in Benin City, Edo State.">
+    <meta property="og:image" content="https://blesyn101.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://blesyn101.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
+    <!-- scripts -->
+    <script src="scripts/directory.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="site-branding">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+            <p>Benin City Chamber of Commerce</p>
+        </div>
+    
+        <button type="button" id="menu" aria-label="navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory" class="active">Directory</a></li>
+                <li><a href="discover.html" title="Discover">Discover</a></li>
+                <li><a href="join.html" title="join">Join</a></li>
+            </ul>
+            <!-- A toggle button to swap between themes -->
+            <!-- <button id="theme-toggle">C</button> -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/benin-city.jpg" alt="View of Benin City">
+    
+            <div class="hero-content">
+                <h1>Connecting Businesses. Building Opportunities.</h1>
+    
+                <p>
+                    Welcome to the Benin City Chamber of Commerce.
+                    Discover local businesses and opportunities in our community.
+                </p>
+    
+                <a href="join.html" class="hero-btn">Join the Chamber</a>
+            </div>
+        </section>
+    
+        <!-- Upcoming Events Section -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+    
+            <div class="event-card">
+                <h3>Business Networking Meetup</h3>
+                <p>
+                    A chance for local entrepreneurs to connect and share ideas.
+                </p>
+            </div>
+        </section>
+    
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Benin City Weather</h2>
+    
+            <div class="current-weather">
+                <h3>Current Weather</h3>
+                <p class="current-temp">--°C</p>
+                <p class="weather-description">Loading weather...</p>
+            </div>
+    
+            <div class="forecast">
+                <h3>Three-Day Forecast</h3>
+    
+                <div id="forecast-container">
+                    <!-- JavaScript will display the three-day forecast here -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- Business Spotlights Section -->
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+    
+            <div id="spotlights-container">
+                <!-- JavaScript will randomly display 2–3 businesses here -->
+            </div>
+        </section>
+    
+        <!-- Join Section -->
+        <section class="join">
+            <h2>Become a Chamber Member</h2>
+    
+            <p>
+                Grow your network and connect with local businesses.
+            </p>
+    
+            <a href="join.html" class="join-btn">Join Us</a>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <div>
+            <h3>Benin City Chamber of Commerce</h3>
+            <p>Benin City, Edo State, Nigeria</p>
+            <p>Email: info@beninchamber.com</p>
+            <p>Phone: +234 801 234 5678</p>
+        </div>
+    
+        <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=100084128108283"><img src="images/facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/blessingagharese_/"><img src="images/instagram.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/blessing-agharese/"><img src="images/linkedin.svg" alt=""></a>
+        </div>
+    
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Agharese Iyonawan Blessing</p>
+            <p>&copy; <span id="currentyear"></span>Benin Chamber Of Commerce</p>
+            <p id="lastModified">Last Modification: </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -159,7 +159,7 @@ main h3, main > p {
     margin: 1.5rem 0;
 }
 
-.view button {
+.view button, .join-btn {
     padding: 0.6rem 1.2rem;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
@@ -167,6 +167,7 @@ main h3, main > p {
     color: var(--heading-color);
     cursor: pointer;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .view button:hover,
@@ -315,13 +316,98 @@ footer img {
 
 .hero-content {
     position: relative; /* Makes the contnt goes untop of the img */
-    z-index: 2; /* Brimgs the content forward */
+    z-index: 2; /* Brings the content forward */
     max-width: 600px;
+    color: var(--heading-color);
 }
 
 .hero-content h1 {
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 1rem;
+}
+
+.hero-content p, .join p {
+    margin: 1rem 0;
+}
+
+/* .join-btn {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+} */
+
+
+
+/*  Weather Section*/
+#forecast-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.current-weather, .forecast {
+    background-color: var(--Background-color);
+    padding: 1.5rem;
+    border: 1px solid var(--hover);
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.current-temp {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* spotlights section */
+.spotlights {
+    margin: 2rem 0;
+}
+
+#spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.spotlight-card {
+    background-color: var(--Background-color);
+    padding: 1.5rem;
+    border-radius: 1px solid var(--hover);
+    border-bottom: 4px solid var(--secondary-color);
+    border-radius: 6px;
+    text-align: center;
+}
+.spotlight-card a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.spotlight-card img {
+    object-fit: contain;
+    margin: 1rem auto;
+}
+
+/* Join section */
+.join {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    margin: 2rem 0;
+}
+
+.join-btn {
+    background-color: var(--Background-color);
+    color: var(--primary-color);
+}
+
+.join-btn:hover {
+    background-color: var(--secondary-color);
     color: var(--heading-color);
 }
