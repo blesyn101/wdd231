@@ -525,3 +525,25 @@ dialog h2 {
     padding-top: 0.8rem;
 }
 
+/* Membership card animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.membership-card {
+    animation: fadeIn 0.8s ease-in-out both;
+}
+/* To ensure animation can be paused */
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+    }
+}
+
