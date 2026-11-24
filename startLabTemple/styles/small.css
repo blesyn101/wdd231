@@ -1,0 +1,35 @@
+*{box-sizing: border-box;}
+
+dialog {
+  width: min(90%, 400px);
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  padding: 20px;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #ddd;
+    padding: 5px;
+    border-bottom: #aaa 1px solid;
+}
+
+#mydialog button {
+    margin: 0;
+    break-inside: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+#mydialog p {
+    padding: 10px;
+    color: #375170;
+    
+}

@@ -433,3 +433,82 @@ footer img {
     color: var(--heading-color);
 }
 
+/* Join Page */
+.application, .membership-levels {
+    padding: 1rem;
+}
+
+.application form {
+    display: grid;
+    gap: 1rem;
+}
+
+.application label {
+    display: grid;
+    gap: 0.4rem;
+    font-weight: bold;
+}
+.application input, .application select, .application textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#submit-btn, .membership-link {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.membership-card {
+    background-color: var(--Background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.membership-card h3, dialog h2 {
+    color: var(--primary-color);
+}
+
+/*  Dialog Modal */
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 60%);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  cursor: pointer;
+}
+
+#myinfo li {
+    margin-bottom: 0.5rem;
+}
+
+#myinfo h4 {
+    color: var(--primary-color);
+    border-top: 1px solid var(--secondary-color);
+    padding-top: 0.8rem;
+}
+

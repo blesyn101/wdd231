@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join to discover local businesses, services, and business opportunities in Benin City, Edo State, Nigeria.">
+    <meta name="author" content="Iyonawan Blessing Agharese">
+
+    <title>Join Page | Benin City Chamber of Commerce</title>
+
+    <!-- Open graph Meta Tags -->
+    <meta property="og:title" content="Benin City Chamber of Commerce">
+    <meta property="og:description" content="Discover and connect with businesses in Benin City, Edo State.">
+    <meta property="og:image" content="https://blesyn101.github.io/wdd231/chamber/images/benin-city.webp">
+    <meta property="og:url" content="https://blesyn101.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.webp" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
+    <!-- scripts -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" type="module" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="site-branding">
+            <a href="index.html" class="logo"><img src="images/logo.webp" alt="Benin city chamber of commerce"></a>
+            <p>Benin City Chamber of Commerce</p>
+        </div>
+
+        <button type="button" id="menu" aria-label="navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li><a href="discover.html" title="Discover">Discover</a></li>
+                <li><a href="join.html" title="join" class="active">Join</a></li>
+            </ul>
+            <!-- A toggle button to swap between themes -->
+            <!-- <button id="theme-toggle">C</button> -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou">
+            <h1>Thank You for Applying!</h1>
+            <p>Your membership application has been received.</p>
+    
+            <h2>Application Details</h2>
+    
+            <div id="application-details">
+                <p><strong>First Name:</strong> <span id="first"></span></p>
+                <p><strong>Last Name:</strong> <span id="last"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Number:</strong> <span id="phone"></span></p>
+                <p><strong>Business Name:</strong> <span id="organization"></span></p>
+                <p><strong>Application Date:</strong> <span id="timestamp"></span></p>
+            </div>
+    
+            <a href="index.html">Return to Home Page</a>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div>
+            <h3>Benin City Chamber of Commerce</h3>
+            <p>Benin City, Edo State, Nigeria</p>
+            <p>Email: info@beninchamber.com</p>
+            <p>Phone: +234 801 234 5678</p>
+        </div>
+
+        <div class="socials">
+            <a href="https://www.youtube.com"><img src="images/youtube.svg"
+                    alt="Benin City chamber of commerce youtube"></a>
+            <a href="https://www.instagram.com/blessingagharese_/"><img src="images/instagram.svg"
+                    alt="Benin City chamber of commerce Instagram"></a>
+            <a href="https://www.linkedin.com/in/blessing-agharese/"><img src="images/linkedin.svg"
+                    alt="Benin City chamber of commerce LinkedIn"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Agharese Iyonawan Blessing</p>
+            <p>&copy; <span id="currentyear"></span>Benin Chamber Of Commerce</p>
+            <p id="lastModified">Last Modification: </p>
+        </div>
+    </footer>
+</body>
+
+</html>
