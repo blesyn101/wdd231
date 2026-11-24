@@ -35,6 +35,17 @@
  }
 
 
+  /* Join page */
+  .membership-levels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .membership-levels h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
 
   /* Footer */
 
