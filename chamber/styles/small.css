@@ -453,6 +453,7 @@ footer img {
     padding: 2rem 1rem;
     margin-bottom: 1rem;
     text-align: center;
+    animation: fadeIn 0.8s ease-in-out both;
 }
 
 .membership-card h3, dialog h2 {
@@ -516,9 +517,7 @@ dialog h2 {
         transform: translateY(0);
     }
 }
-.membership-card {
-    animation: fadeIn 0.8s ease-in-out both;
-}
+
 /* To ensure animation can be paused */
 @media (prefers-reduced-motion: reduce) {
     .membership-card {
