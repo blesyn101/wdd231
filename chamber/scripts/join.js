@@ -44,7 +44,7 @@ function showBenefits(membership) {
 
   // create the cost heading
   const costHeading = document.createElement("h4");
-  costHeading.textContent = `Cost ${membership.cost}`;
+  costHeading.textContent = `COST: ${membership.cost}`;
 
   // Append the elements ul li created and costheadin to myinfo
   myinfo.appendChild(ul);

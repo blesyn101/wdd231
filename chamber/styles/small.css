@@ -464,6 +464,7 @@ footer img {
     border-radius: 5px;
     cursor: pointer;
     margin-top: .75rem;
+    font-weight: bold;
 }
 
 .membership-card {
@@ -481,6 +482,7 @@ footer img {
 
 /*  Dialog Modal */
 dialog {
+  margin: auto;
   border: 3px solid var(--secondary-color);
   border-radius: .55rem;
   padding: 1rem;
@@ -500,6 +502,17 @@ dialog button {
   padding: .5rem 1rem;
   border: 1px solid rgb(0 0 0 / 10%);
   cursor: pointer;
+  border-radius: 5px;
+}
+dialog button:hover {
+    background-color: #174a3a;
+    color: var(--heading-color);
+}
+
+dialog h2 {
+    border-bottom: dotted;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 #myinfo li {
