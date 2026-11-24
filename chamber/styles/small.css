@@ -106,21 +106,12 @@ header {
   display: block;
 }
 
-/* nav a:hover {
-    color: var(--secondary-color);
-} */
-
 /* A wayfinding symbol for the user */
 .navigation .active {
     background-color: var(--secondary-color);
     color: var(--text-color);
     font-weight: 700;
 }
-
-/* .active::after {
-  color: var(--heading-color);
-  content: " •";
-} */
 
 /* Main content */
 main {
@@ -275,7 +266,7 @@ footer {
     margin-top: 2rem;
     text-align: center;
 }
-footer h3 {
+footer h3, .events h3 {
     color: var(--heading-color);
 }
 
@@ -331,14 +322,6 @@ footer img {
     margin: 1rem 0;
 }
 
-/* .join-btn {
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: var(--heading-color);
-} */
-
 /* Events */
 .events {
     padding: 2rem 1rem;
@@ -346,9 +329,6 @@ footer img {
     color: var(--heading-color);
     margin: 2rem 0;
     text-align: center;
-}
-.events h3 {
-    color: var(--heading-color);
 }
 
 /*  Weather Section*/
@@ -400,7 +380,6 @@ footer img {
 .spotlight-card {
     background-color: var(--Background-color);
     padding: 1.5rem;
-    border-radius: 10px solid var(--heading-color);
     border: 4px solid var(--primary-color);
     text-align: center;
 }
